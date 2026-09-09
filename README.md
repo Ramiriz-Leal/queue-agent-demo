@@ -1,5 +1,12 @@
 # Automation Agent Console (Demo)
 
+[![Tauri](https://img.shields.io/badge/Tauri%202-24C8DB?style=flat-square&logo=tauri&logoColor=black)](https://tauri.app/)
+[![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![React](https://img.shields.io/badge/React%2018-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+![No network calls](https://img.shields.io/badge/network%20calls-none-2f6f4e?style=flat-square)
+
+
 A fully working **desktop application** (Tauri + React) that demonstrates the shape of
 a background automation agent: it lives in the system tray, polls a **mocked job
 queue** on an interval, processes jobs one at a time with a live log, and exposes a
@@ -10,6 +17,17 @@ provider, and no network calls** of any kind.
 
 This project is a portfolio piece: it is not connected to, and does not depend on, any
 production system.
+
+## Screens
+
+The agent running: the queue is polled on an interval, one job is processed at a time, and
+each job keeps its own step by step log.
+
+![Dashboard with the agent running](docs/dashboard.png)
+
+Settings, persisted to a real JSON config file through the Rust backend.
+
+![Settings](docs/settings.png)
 
 ## What it demonstrates
 
